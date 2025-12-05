@@ -6,6 +6,7 @@
 
 #show figure.where(kind: image): set figure(supplement: "Рис.")
 #show figure.where(kind: table): set figure(supplement: "Табл.")
+#show sym.emptyset: set text(font: "Fira Sans")
 
 #let i = 1
 
