@@ -23,9 +23,9 @@
 #definition()[
   Пусть $A, B in cal(P)(Omega)$. Определим операции над множествами:
   + $overline(A) = {x in Omega | x in.not A}$.
-  + $A inter B = {x in Omega | x in A " " amp " " x in B}$.
-  + $A union B = {x in Omega | x in A " " or " " x in B}$.
-  + $A \\ B = {x in Omega | x in A " " amp " " x in.not B} = A inter overline(B)$.
+  + $A inter B = {x in Omega | (x in A) amp (x in B)}$.
+  + $A union B = {x in Omega | (x in A) or (x in B)}$.
+  + $A \\ B = {x in Omega | (x in A) amp (x in.not B)} = A inter overline(B)$.
   + $A Delta B = (A \\ B) union (B \\ A)$.
 ]
 
@@ -56,4 +56,3 @@
 #theorem(name: "Теорема (о числе подмножеств n-элементного множества)")[
   Число подмножеств $n$-элементного множества равно $2^n$.
 ][]
-

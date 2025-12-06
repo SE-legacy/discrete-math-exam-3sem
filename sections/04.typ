@@ -16,7 +16,5 @@
       forall a in A "  " forall b in A "  " forall c in A "  " lr(((a, b) in rho " " amp " " (b, c) in rho), size: #125%) => (a = b).
     $
   + Полным, если
-    $ forall a in A "  " forall b in B "  " (a, b) in rho " " or " " (b, a) in rho. $
+    $ forall a in A "  " forall b in B "  " lr(((a, b) in rho), size: #125%) or lr(((b, a) in rho), size: #125%). $
 ]
-
-

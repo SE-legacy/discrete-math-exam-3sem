@@ -37,7 +37,7 @@
   + Операции дополнения, пересечения и объединения определяются аналогично операциям над множествами.
 
   + $rho^(-1) = {(b, a) in B times A | (a, b) in rho}$.
-  + $rho compose sigma = {(a, c) in A times C | exists b in B " " (a, b) in rho " " amp " " (b, c) in sigma }$.
+  + $rho compose sigma = {(a, c) in A times C | exists b in B " " lr(((a, b) in rho), size: #125%) amp lr(((b, c) in sigma), size: #125%) }$.
 ]
 
 Пусть конечные множества $A, B != emptyset, " " A = {a_1, a_2, ..., a_n}, " " B = {b_1, b_2, ..., b_n}$. $rho in cal(P)(A times B)$. Рассмотрим способы задания конечных бинарных отношений:
@@ -90,4 +90,3 @@
       0, 0, ..., 1
     )$.
 ][]
-
