@@ -72,8 +72,8 @@ $A_1$ изоморфен ($tilde.equiv$) $A_2$, если $exists$ 3 биекци
   $psi: X_1 arrow.r X_2$,
   $chi: Y_1 arrow.r Y_2$
   таких, что выполняются выполняются 2 условия:
-  - $forall s in S_1, forall x in X_1 phi(delta_1(s,x))) = delta_2(phi(s),psi(x))$
-  - $chi(lambda_1(s,x)) = lambda_2(phi(s),psi(x))$
+  - $forall s in S_1, forall x in X_1 phi(delta_1 (s,x))) = delta_2 (phi(s),psi(x))$
+  - $chi(lambda_1 (s,x)) = lambda_2 (phi(s),psi(x))$
 ]
 
 #definition()[
@@ -85,8 +85,8 @@ $A_1$ изоморфен ($tilde.equiv$) $A_2$, если $exists$ 3 биекци
 
   #show  math.cases:set text(size:14pt)
   $cases(
-    phi(delta_1(s,x)) = delta_2(phi(s),x),
-    lambda_1(s,x) = lambda_2(phi(s),x),
+    phi(delta_1 (s,x)) = delta_2 (phi(s),x),
+    lambda_1 (s,x) = lambda_2 (phi(s),x),
   )$  
 ]
 
@@ -114,9 +114,9 @@ $A_1$ изоморфен ($tilde.equiv$) $A_2$, если $exists$ 3 биекци
 
   $Delta_S = phi$,  $Delta_X = psi$,  $Delta_Y = chi$
 
-  $Delta_S(delta(s,x)) = delta(Delta_S(s),Delta_X(x))$ , где $Delta_S(delta(s,x)) = delta(s,x)$, $Delta_S(s) = s$, $Delta_X(x) = x$
+  $Delta_S (delta(s,x)) = delta(Delta_S (s),Delta_X (x))$ , где $Delta_S (delta(s,x)) = delta(s,x)$, $Delta_S (s) = s$, $Delta_X (x) = x$
 
-  $Delta_Y(lambda(s,x)) = lambda(Delta_S(s),Delta_X(x))$
+  $Delta_Y (lambda(s,x)) = lambda(Delta_S (s),Delta_X (x))$
 
   Каждый автомат изоморфен сам себе.
 
@@ -134,9 +134,9 @@ $A_1$ изоморфен ($tilde.equiv$) $A_2$, если $exists$ 3 биекци
 
   $forall s' subset.eq S_2 forall x' subset.eq X_2$
 
-  $phi^(-1)(delta_2(s',x')) = delta_1(phi^(-1)(s'), psi^(-1)(x')) arrow.r.double delta_1(s,x) = phi^(-1)(delta_2(phi(s),psi(x)))$
+  $phi^(-1)(delta_2 (s',x')) = delta_1(phi^(-1)(s'), psi^(-1)(x')) arrow.r.double delta_1 (s,x) = phi^(-1)(delta_2 (phi(s),psi(x)))$
 
-  $chi^(-1)(lambda_2(s',x')) = lambda_1(phi^(-1)(s'),psi^(-1)(x')) arrow.r.double lambda_1(s,x) = chi^(-1)(lambda_2(phi(s),psi(x)))$
+  $chi^(-1)(lambda_2 (s',x')) = lambda_1 (phi^(-1)(s'),psi^(-1)(x')) arrow.r.double lambda_1(s,x) = chi^(-1)(lambda_2 (phi(s),psi(x)))$
 
 
   Докажем транзитивность.
@@ -153,32 +153,32 @@ $A_1$ изоморфен ($tilde.equiv$) $A_2$, если $exists$ 3 биекци
 
   $forall s in S_1 forall x in X_1$
 
-  (1) $phi(delta_1(s,x)) = delta_2(phi(s),psi(x))$
+  (1) $phi(delta_1 (s,x)) = delta_2 (phi(s),psi(x))$
   
-  (2) $chi(lambda_1(s,x)) = lambda_2(phi(s),psi(x))$
+  (2) $chi(lambda_1 (s,x)) = lambda_2 (phi(s),psi(x))$
 
   $forall s' in S_2 forall x' in X_2$
 
-  (3) $rho(delta_2(s',x')) = delta_3(rho(s'),sigma(x'))$
+  (3) $rho(delta_2 (s',x')) = delta_3 (rho(s'),sigma(x'))$
 
-  (4) $tau(lambda_2(s',x')) = lambda_3(rho(s'),sigma(x'))$
+  (4) $tau(lambda_2 (s',x')) = lambda_3 (rho(s'),sigma(x'))$
 
 
   Нашлась тройка биекций. 
 
   Докажем $phi dot rho : S_1 arrow.r S_2,  psi dot sigma: X_1 arrow.r X_3, chi dot tau: Y_1 arrow.r Y_3$
 
-  (5) $forall s in S_1 forall x in X_1  (phi dot rho)(delta_1(s,x)) = delta_3((phi dot rho)(s),(psi dot sigma)(x))$
+  (5) $forall s in S_1 forall x in X_1  (phi dot rho)(delta_1 (s,x)) = delta_3 ((phi dot rho)(s),(psi dot sigma)(x))$
 
-  (6) $(chi dot tau)(lambda_1(s,x)) = lambda_3((phi dot rho)(s),(psi dot sigma)(x))$
+  (6) $(chi dot tau)(lambda_1 (s,x)) = lambda_3 ((phi dot rho)(s),(psi dot sigma)(x))$
 
   Из (5) и (6) должно следовать $A_1 tilde.equiv A_3$
 
   Докажем 5:
 
-  $(phi dot rho)(delta_1(s,x)) = rho(phi(delta_1,(s,x))) = rho(delta_2(phi(s),psi(x))) = delta_3(rho(phi(s)),sigma(psi(x))) = delta_3((phi dot rho)(s),(psi dot sigma)(x))$
+  $(phi dot rho)(delta_1 (s,x)) = rho(phi(delta_1,(s,x))) = rho(delta_2 (phi(s),psi(x))) = delta_3 (rho(phi(s)),sigma(psi(x))) = delta_3 ((phi dot rho)(s),(psi dot sigma)(x))$
 
   Докажем 6:
 
-  $(chi dot tau)(lambda_1(s,x)) = tau(chi(lambda_1(s,x))) = tau(lambda_2(phi(s), psi(x))) = lambda_3(rho(psi(s), sigma(psi(x))) = lambda_3((phi dot rho)(s),(psi dot sigma)(x))$
+  $(chi dot tau)(lambda_1 (s,x)) = tau(chi(lambda_1 (s,x))) = tau(lambda_2 (phi(s), psi(x))) = lambda_3 (rho(psi(s), sigma(psi(x))) = lambda_3  ((phi dot rho)(s),(psi dot sigma)(x))$
 ]
