@@ -90,7 +90,7 @@ $
 #definition()[
   Пусть $a, b in A$. Элемент $b$ называют нижним соседом элемента $a$, если выполняется следующее условие:
 
-  $ (b < a) amp " " not (exists x in A " " b < x < a). $
+  $ (b < a) " " amp " " not (exists x in A " " b < x < a). $
 ]
 
 #definition()[
