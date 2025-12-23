@@ -32,7 +32,7 @@
 ]
 
 #definition()[
-  Пусть $A, B != emptyset, " " rho subset.eq A times B, " " sigma subset.eq A times B$. Определим операции над бинарными отношениями:
+  Пусть $A, B != emptyset, " " rho subset.eq A times B, " " sigma subset.eq B times C$. Определим операции над бинарными отношениями:
 
   + Операции дополнения, пересечения и объединения определяются аналогично операциям над множествами.
 
