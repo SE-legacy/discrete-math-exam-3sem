@@ -3,7 +3,7 @@
 Пусть $A, B != emptyset, " " rho subset.eq A times B$
 
 #definition()[
-  Пусть $a in A$. Срезом бинарного отношения $rho$ по элементу $a$ называется множество ${b in B | (a, b) in rho}$, и обозначается как $rho(a)$.
+  Пусть $a in A$. Срезом бинарного отношения $rho$ по элементу $a$ называется множество ${b in B | (a, b) in rho}$ и обозначается как $rho(a)$.
 ]
 
 #definition(breakline: true)[
