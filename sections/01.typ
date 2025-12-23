@@ -30,7 +30,7 @@
 ]
 
 #definition()[
-  $A in cal(P)(Omega), " " abs(Omega) = n, " " Omega = {x_1, ..., x_2}$, где зафиксируем порядок элементов.
+  $A in cal(P)(Omega), " " abs(Omega) = n, " " Omega = {x_1, ..., x_n}$, где зафиксируем порядок элементов.
 
   $overline(Chi)_A = (overline(Chi)_1^A, overline(Chi)_2^A, ..., overline(Chi)_n^A )$, где
 
