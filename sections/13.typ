@@ -4,17 +4,17 @@
 
 _Доказательство (по индукции)_
 
-1. k = 1: $epsilon_0 != epsilon_1 arrow$ число классов в $epsilon_1 >= 2$?
+1. k = 1: $epsilon_0 != epsilon_1$ ==> число классов в $epsilon_1 >= 2$?
 
-Любые 2 состояния являются 0-неразличимыми $arrow |S slash epsilon_0| = 1$
+Любые 2 состояния являются 0-неразличимыми ==> $|S slash epsilon_0| = 1$
 
-$epsilon_0 supset epsilon_1 arrow |S slash epsilon_1| > |S slash epsilon_0| = 1 arrow |S slash epsilon_1| >= 2$
+$epsilon_0 supset epsilon_1 ==> |S slash epsilon_1| > |S slash epsilon_0| = 1 ==> |S slash epsilon_1| >= 2$
 
-2. k > 1: $epsilon_(r - 1) != epsilon_r arrow |S slash epsilon_r| > |S slash epsilon_(r - 1)|$
+2. k > 1: $epsilon_(r - 1) != epsilon_r ==> |S slash epsilon_r| > |S slash epsilon_(r - 1)|$
 
 $|S slash epsilon_(r - 1)| >= (r - 1) + 1 = r$ (по предположению индукции)
 
-$|S slash epsilon_r| > r arrow |S slash epsilon_r| >= r + 1$. $qed$
+$|S slash epsilon_r| > r ==> |S slash epsilon_r| >= r + 1$. $qed$
 
 *Лемма о числе состояний в классах $epsilon_k$*
 
@@ -35,4 +35,3 @@ _Доказательство_
 *Теорема Мура*
 
 В автомате из n состояний $epsilon_(n - 1) = epsilon_n$
-
