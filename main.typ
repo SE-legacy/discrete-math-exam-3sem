@@ -6,6 +6,10 @@
 
 #show figure.where(kind: image): set figure(supplement: "Рис.")
 #show figure.where(kind: table): set figure(supplement: "Табл.")
+
+#set table(align: center, stroke: 0.5pt, inset: 6pt)
+#show table.cell.where(y: 0): strong
+
 #show sym.emptyset: set text(font: "Fira Sans")
 
 #let i = 1
