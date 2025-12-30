@@ -10,6 +10,8 @@
 #set table(align: center, stroke: 0.5pt, inset: 6pt)
 #show table.cell.where(y: 0): strong
 
+#set enum(numbering: "1.a.")
+
 #show sym.emptyset: set text(font: "Fira Sans")
 
 #let i = 1
